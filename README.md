@@ -1,0 +1,2 @@
+# MSML---Optimal-Transport-PINNs-A-Data-Efficient-Approach-to-High-Fidelity-Turbulence-Modeling
+Turbulence modelling in CFD is limited by the tradeoff between accuracy and cost. We propose OT-PINNs—PINNs with an Optimal Transport-based loss—to improve training stability and accuracy under noisy data. With SINDy for interpretability, our method rivals DNS on benchmark flows while cutting computational costs.
