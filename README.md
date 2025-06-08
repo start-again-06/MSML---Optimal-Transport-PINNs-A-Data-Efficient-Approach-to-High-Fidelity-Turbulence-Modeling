@@ -23,12 +23,19 @@ Designed for research and educational purposes, this project demonstrates how in
 📁 Repository Structure
 
 ├── Ot Pinns Turbulence.py         # Main training loop with OT-PINNs + SINDy
+
 ├── ot_pinn_model_weights.py       # Script to save/load model weights
+
 ├── u_pred_save_loader.py          # Visualize saved u predictions
+
 ├── v_pred_save_loader.py          # Visualize saved v predictions
+
 ├── ot_pinn_model.pt               # Saved model weights (binary)
+
 ├── u_pred.npy / v_pred.npy        # Saved NumPy predictions
+
 ├── data_vel (1).xlsx              # Input DNS data (2D slice)
+
 ├── README.md                      # This file
 
 📦 Installation
@@ -66,6 +73,7 @@ This will generate:
 | Model stability       | ✅ Robust       |
 
 🖼 Visual Results
+
 ✅ Accurate reconstruction of velocity fields.
 
 ✅ High-fidelity match in energy spectrum plots.
