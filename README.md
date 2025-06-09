@@ -1,5 +1,6 @@
 # MSML Conference---Optimal-Transport-PINNs-A-Data-Efficient-Approach-to-High-Fidelity-Turbulence-Modeling
 
+
 🚀Overview
 This repository presents a hybrid framework combining Optimal Transport-enhanced Physics-Informed Neural Networks (OT-PINNs) and Sparse Identification of Nonlinear Dynamical Systems (SINDy) to model high-Reynolds-number turbulence from noisy Direct Numerical Simulation (DNS) data.
 
