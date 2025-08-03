@@ -1,6 +1,7 @@
 # MSML Conference---Optimal-Transport-PINNs-A-Data-Efficient-Approach-to-High-Fidelity-Turbulence-Modeling
 
 OVERVIEW
+===========
 
 This repository presents a hybrid framework combining Optimal Transport-enhanced
 Physics-Informed Neural Networks (OT-PINNs) and Sparse Identification of Nonlinear
@@ -12,6 +13,7 @@ interpretable, reduced-order models can be learned from partial and noisy
 turbulence data using physics-informed deep learning.
 
 🧠 FEATURES
+===========
 
 - Time-dependent PINNs           : Learn velocity fields across multiple timesteps
 - Optimal Transport Loss         : Alleviates training instability and spectral bias
