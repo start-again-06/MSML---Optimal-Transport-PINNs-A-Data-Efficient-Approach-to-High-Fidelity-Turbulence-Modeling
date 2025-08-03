@@ -1,8 +1,6 @@
 # MSML Conference---Optimal-Transport-PINNs-A-Data-Efficient-Approach-to-High-Fidelity-Turbulence-Modeling
 
-==================================================
 OVERVIEW
-==================================================
 
 This repository presents a hybrid framework combining Optimal Transport-enhanced
 Physics-Informed Neural Networks (OT-PINNs) and Sparse Identification of Nonlinear
@@ -13,10 +11,7 @@ Designed for research and educational purposes, this project demonstrates how
 interpretable, reduced-order models can be learned from partial and noisy
 turbulence data using physics-informed deep learning.
 
-
-==================================================
 🧠 FEATURES
-==================================================
 
 - Time-dependent PINNs           : Learn velocity fields across multiple timesteps
 - Optimal Transport Loss         : Alleviates training instability and spectral bias
@@ -26,10 +21,7 @@ turbulence data using physics-informed deep learning.
 - Energy Spectrum Comparison     : Validates learned models against DNS
 - Modular Design                 : Easy to adapt for other PDE systems or flow data
 
-
-==================================================
-📁 REPOSITORY STRUCTURE
-==================================================
+REPOSITORY STRUCTURE
 
 Ot Pinns Turbulence.py          - Main training loop with OT-PINNs + SINDy  
 ot_pinn_model_weights.py        - Script to save/load model weights  
@@ -40,10 +32,7 @@ u_pred.npy / v_pred.npy         - Saved NumPy predictions
 data_vel (1).xlsx               - Input DNS data (2D slice)  
 README.md                       - This file
 
-
-==================================================
 📦 INSTALLATION
-==================================================
 
 Install dependencies via pip:
 
@@ -53,10 +42,7 @@ Requirements:
 - Python 3.8 or higher
 - CUDA-compatible GPU (recommended for performance)
 
-
-==================================================
 ⚙️ USAGE
-==================================================
 
 Train the OT-PINN model:
 
@@ -75,10 +61,7 @@ Visualize predictions:
     python "u_pred_save_loader.py"
     python "v_pred_save_loader.py"
 
-
-==================================================
 📈 RESULTS
-==================================================
 
 Performance Benchmarks:
 
@@ -96,10 +79,7 @@ Visual Highlights:
 
 (All visualizations are included in the training script)
 
-
-==================================================
 📚 PUBLICATIONS & CITATION
-==================================================
 
 If you find this repository useful for your research, please cite:
 
@@ -110,10 +90,7 @@ If you find this repository useful for your research, please cite:
   note   = {Manuscript in preparation}  
 }
 
-
-==================================================
 🛠️ FUTURE DIRECTIONS
-==================================================
 
 - Extension to full 3D turbulence volumes
 - Integration with attention-based neural PDE solvers
