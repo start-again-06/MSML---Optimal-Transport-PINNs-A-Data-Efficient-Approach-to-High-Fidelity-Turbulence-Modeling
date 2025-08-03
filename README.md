@@ -1,7 +1,7 @@
 # MSML Conference---Optimal-Transport-PINNs-A-Data-Efficient-Approach-to-High-Fidelity-Turbulence-Modeling
 
 ==================================================
-🚀 OVERVIEW
+OVERVIEW
 ==================================================
 
 This repository presents a hybrid framework combining Optimal Transport-enhanced
