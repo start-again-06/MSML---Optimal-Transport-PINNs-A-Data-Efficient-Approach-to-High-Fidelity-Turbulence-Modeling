@@ -1,106 +1,77 @@
-# MSML Conference---Optimal-Transport-PINNs-A-Data-Efficient-Approach-to-High-Fidelity-Turbulence-Modeling
+# MSML Conference  
+## Optimal Transport PINNs: A Data-Efficient Approach to High-Fidelity Turbulence Modeling
 
-OVERVIEW
-===========
+---
 
-This repository presents a hybrid framework combining Optimal Transport-enhanced
-Physics-Informed Neural Networks (OT-PINNs) and Sparse Identification of Nonlinear
-Dynamical Systems (SINDy) to model high-Reynolds-number turbulence from noisy
-Direct Numerical Simulation (DNS) data.
+## Overview
 
-Designed for research and educational purposes, this project demonstrates how
-interpretable, reduced-order models can be learned from partial and noisy
-turbulence data using physics-informed deep learning.
+This repository presents a hybrid modeling framework that combines **Optimal Transport–enhanced Physics-Informed Neural Networks (OT-PINNs)** with **Sparse Identification of Nonlinear Dynamical Systems (SINDy)** to learn reduced-order turbulence models from noisy **Direct Numerical Simulation (DNS)** data.
 
-🧠 FEATURES
-===========
+The approach targets high–Reynolds-number turbulent flows and demonstrates how **interpretable, physics-consistent dynamics** can be extracted from partial and corrupted data using modern deep learning techniques.
 
-- Time-dependent PINNs           : Learn velocity fields across multiple timesteps
-- Optimal Transport Loss         : Alleviates training instability and spectral bias
-- SINDy Integration              : Extract sparse, symbolic dynamics from the learned flow
-- CUDA-Enabled                   : Training accelerated with GPU support
-- Noisy Data Handling            : Trained effectively on 5% corrupted velocity data
-- Energy Spectrum Comparison     : Validates learned models against DNS
-- Modular Design                 : Easy to adapt for other PDE systems or flow data
+This project is intended for research and educational use.
 
-REPOSITORY STRUCTURE
+---
 
-Ot Pinns Turbulence.py          - Main training loop with OT-PINNs + SINDy  
-ot_pinn_model_weights.py        - Script to save/load model weights  
-u_pred_save_loader.py           - Visualize saved u predictions  
-v_pred_save_loader.py           - Visualize saved v predictions  
-ot_pinn_model.pt                - Saved model weights (binary)  
-u_pred.npy / v_pred.npy         - Saved NumPy predictions  
-data_vel (1).xlsx               - Input DNS data (2D slice)  
-README.md                       - This file
+## Features
 
-📦 INSTALLATION
+- Time-dependent PINNs for learning velocity fields across multiple timesteps  
+- Optimal Transport–based loss to mitigate training instability and spectral bias  
+- SINDy integration for sparse, symbolic discovery of governing dynamics  
+- CUDA-enabled training for accelerated performance  
+- Robust learning from velocity fields with up to 5% noise corruption  
+- Energy spectrum comparison against DNS for physical validation  
+- Modular and extensible design for other PDE systems  
 
-Install dependencies via pip:
+---
 
-    pip install torch numpy matplotlib pandas scipy scikit-learn
+### Requirements
 
-Requirements:
-- Python 3.8 or higher
+- Python 3.8 or higher  
 - CUDA-compatible GPU (recommended for performance)
 
-⚙️ USAGE
+## Results
 
-Train the OT-PINN model:
+### Performance Benchmarks
 
-    python "Ot Pinns Turbulence.py"
+| Metric                | OT-PINN (Ours) |
+|-----------------------|---------------|
+| Mean u-error          | ~2.1e-2       |
+| Mean v-error          | ~2.4e-2       |
+| Energy spectrum match | Yes           |
+| Model stability       | Robust        |
 
-This will generate:
-- ot_pinn_model.pt      : Trained model weights
-- u_pred.npy, v_pred.npy: Predicted velocity fields
+### Key Observations
 
-Reload or export the model:
+- Accurate reconstruction of turbulent velocity fields  
+- High-fidelity agreement with DNS energy spectra  
+- Sparse and interpretable governing dynamics identified via SINDy  
 
-    python "ot_pinn_model_weights.py"
+All visualizations are generated within the training scripts.
 
-Visualize predictions:
+## Future Directions
 
-    python "u_pred_save_loader.py"
-    python "v_pred_save_loader.py"
+- Extension to full three-dimensional turbulence simulations  
+- Integration with attention-based neural PDE solvers  
+- Online and streaming PINN training  
+- Differentiable coupling with Navier–Stokes solvers (e.g., JAX-CFD)  
 
-📈 RESULTS
+---
 
-Performance Benchmarks:
+## License
 
-Metric                     | OT-PINN (Ours)
--------------------------- | ---------------
-Mean u-error               | ~2.1e-2
-Mean v-error               | ~2.4e-2
-Energy spectrum match      | ✅
-Model stability            | ✅ Robust
+This project is intended for academic and research use.  
+Please cite the associated work when using or extending this repository.
 
-Visual Highlights:
-- Accurate reconstruction of velocity fields
-- High-fidelity match in energy spectrum plots
-- Sparse dynamics discovered using SINDy
+## Publications and Citation
 
-(All visualizations are included in the training script)
+If you use this work in your research, please cite:
 
-📚 PUBLICATIONS & CITATION
-
-If you find this repository useful for your research, please cite:
-
-@article{MSML2025,  
-  title  = {Optimal Transport PINNs with SINDy for Turbulence Modeling},  
-  author = {Anjan Mahapatra & Nikhil Raj},  
-  year   = {2025},  
-  note   = {Manuscript in preparation}  
+```bibtex
+@article{MSML2025,
+  title  = {Optimal Transport PINNs with SINDy for Turbulence Modeling},
+  author = {Mahapatra, Anjan and Raj, Nikhil},
+  year   = {2025},
+  note   = {Manuscript in preparation}
 }
-
-🛠️ FUTURE DIRECTIONS
-
-- Extension to full 3D turbulence volumes
-- Integration with attention-based neural PDE solvers
-- Real-time training via online/streaming PINNs
-- Differentiable coupling with Navier-Stokes solvers (e.g., JAX CFD)
-
-
-
-
-
 
