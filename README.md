@@ -13,7 +13,7 @@ This project is intended for research and educational use.
 
 ---
 ### High-Level Architecture
-The framework learns turbulent velocity fields u(x,t) by minimizing a composite loss L = L_PINN + λ L_OT, where physics residuals enforce the Navier–Stokes equations and Optimal Transport aligns predicted and DNS data distributions under noise. The learned latent dynamics are post-processed using SINDy to identify a sparse governing system z_dot = Θ(z) ξ, resulting in an interpretable reduced-order turbulence model.
+The framework learns turbulent velocity fields u(x,t) by minimizing a composite loss L = L_PINN + $(\λ)$ L_OT, where physics residuals enforce the Navier–Stokes equations and Optimal Transport aligns predicted and DNS data distributions under noise. The learned latent dynamics are post-processed using SINDy to identify a sparse governing system z_dot = $(\Θ(z))$ $(\ξ)$, resulting in an interpretable reduced-order turbulence model.
 
 ```mermaid
 flowchart TD
