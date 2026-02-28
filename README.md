@@ -7,7 +7,7 @@
 
 This repository presents a hybrid modeling framework that combines *Optimal Transport–enhanced Physics-Informed Neural Networks (OT-PINNs)* with *Sparse Identification of Nonlinear Dynamical Systems (SINDy)* to learn reduced-order turbulence models from noisy *Direct Numerical Simulation (DNS)* data.
 
-The approach targets high–Reynolds-number turbulent flows and demonstrates how **interpretable, physics-consistent dynamics** can be extracted from partial and corrupted data using modern deep learning techniques.
+The approach targets high–Reynolds-number turbulent flows and demonstrates how interpretable, physics-consistent dynamics can be extracted from partial and corrupted data using modern deep learning techniques.
 
 This project is intended for research and educational use.
 
