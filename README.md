@@ -101,8 +101,6 @@ flowchart TD
 | Energy spectrum match | Yes           |
 | Model stability       | Robust        |
 
-![Benchmark Dashboard - Physics Informed Neural Networks](https://github.com/start-again-06/MSML---Optimal-Transport-PINNs-A-Data-Efficient-Approach-to-High-Fidelity-Turbulence-Modeling/blob/9c953247be7f4a653dd0c96c1b131412c3c69c33/results/Complete_Dashboard_Image_PINN.png)
-
 ### Key Observations
 
 - Accurate reconstruction of turbulent velocity fields  
