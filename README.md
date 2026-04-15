@@ -101,6 +101,8 @@ flowchart TD
 | Energy spectrum match | Yes           |
 | Model stability       | Robust        |
 
+![Comprehensive Dashboard](https://github.com/start-again-06/MSML---Optimal-Transport-PINNs-A-Data-Efficient-Approach-to-High-Fidelity-Turbulence-Modeling/blob/de29b4291fee0476565aefd5bb84c4fb842014bd/results/Comprehensive%20Statistical%20Summary%20Dashboard.png)
+
 ### Key Observations
 
 - Accurate reconstruction of turbulent velocity fields  
